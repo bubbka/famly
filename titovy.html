@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/main1.css"/>
+    </head>
+    <body style="background-color: darkgray; height: 100vh; margin: 0;">
+        <style>
+            .oval{
+                background-color: teal;
+                    border-radius: 40px;
+                    margin: 25px;
+                    text-align: center;
+                    align-content: center;
+                    font-size: 30px;
+                    color: white;
+                    width: 160px;
+                    height: 80px;
+            }
+            .oval:hover{
+                background-color: white;
+                    font-size: 30px;
+                    color:teal;
+                    width: 90%;
+            }
+            .oval {
+                transition: all 0.1s;
+            }
+            .oval .description {
+                display: none;
+            }
+            .oval:hover .text {
+                display: none;
+            }
+            .oval:hover .description{
+                display: inline;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: calc(100% - 67px);
+            }
+        </style>
+        <div style="background-color:teal;
+                    color: white; 
+                    height: 67px; 
+                    display:block;
+                    text-align: center;
+                    align-content: center;
+                    font-size: 30px;">
+            Титовы
+        </div>
+        <div class="container">
+            <div class="oval">
+                <span class="text">Андрей</span>
+                <span class="description">лучший папа</span>
+            </div>
+            <div class="oval">
+                <span class="text">Светлана</span>
+                <span class="description">лучшая мама</span>
+            </div>
+            <div class="oval">
+                <span class="text">Анна</span>
+                <span class="description">лучшая сестра</span>
+            </div>
+            <div class="oval">
+                <span class="text">Тимофей</span>
+                <span class="description">лучший брат</span>
+            </div>
+            <div class="oval">
+                <span class="text">Лилия</span>
+                <span class="description">а ну это я</span>
+            </div>
+
+        </div>
+    </body>
+</html>
